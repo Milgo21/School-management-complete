@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>{{ title }}</h2>
+  <div class="form-input">
+    <div class="input-name">
+      <label for="name">Enter student name</label>
+      <input type="text" #name />
+    </div>
+    <div class="input-fee">
+      <label for="fee">School fee</label>
+      <input type="text" #fee />
+    </div>
+    <div class="input-balance">
+      <label for="balance">Fee Balance</label>
+      <input type="text" #balance [defaultValue]="0" />
+    </div>
+    <div class="btn">
+      <button (click)="addStudent(name,fee,balance)">Add Student</button>
+    </div>
+  </div>
+  <!-- <div class="display-students">
+    <app-display-students></app-display-students>
+  </div> -->
+</div>

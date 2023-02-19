@@ -1,0 +1,16 @@
+.nobalance{
+  background-color: coral;
+}
+.student{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 600px;
+}
+.edit{
+  padding: 0.5rem;
+  color: white;
+  background-color: olivedrab;
+  border: none;
+  border-radius: 3px;
+}

@@ -1,0 +1,13 @@
+<p>display-students works!</p>
+<div class="student"*ngFor = "let student of students" [ngClass]="{nobalance: student.balance =='0'}">
+  <label for="Name">Name</label>
+  {{student.name}} <br>
+  <label for="fee">Fee</label>
+  {{student.fee|currency}} <br>
+  <label for="balance">Balance</label>
+  {{student.balance | currency}}
+  <div>
+    <button class="edit" (click)="onEdit(student.name)">Edit balance</button>
+  </div>
+</div>
+
